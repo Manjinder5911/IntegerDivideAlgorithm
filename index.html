@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/big.js/5.2.2/big.min.js"></script>
+  <title>Division Algorithm</title>
+</head>
+<body>
+  <div class="container">
+    <div style="font-size: 1.3rem;margin: 15px 0px;">Manjinder Singh (812572)</div>
+   <div style="display:flex;flex-direction:column;">
+      <h1 style="text-align: center;margin: 50px;">Division Algorithm</h1>
+      <div style="display:flex;flex-direction:row;justify-content: center;">
+      <div class="form-row">
+        <div style="display: flex;">
+        <div class="form-group">
+          <label for="dividend">Dividend:</label>
+          <input type="number" class="inputCalculation" id="dividend" placeholder="-7 to 7" name="dividend" required>
+          <label id="dividendEntryError" style="color:red;"></label>
+        </div>
+        <div class="form-group">
+          <label for="divisor">Divisor:</label>
+          <input type="number" class="inputCalculation" id="divisor" placeholder="-7 to 7" name="divisor" required>
+          <label id="divisorEntryError" style="color:red;"></label>
+        </div>
+    </div>
+        <div style="margin-top: 21px "> <button id="CalculateResult" type="submit">Calculate</button></div>
+       
+      </div>
+    
+    </div>
+    </div>
+
+    <div class="diagram-container">
+        
+    <div>
+        <div id="iterationDiv" style="font-weight: bold;font-size: 1.5rem; margin: 17px 27px; display: none;">
+            <span>Iteration&nbsp;</span><span id="iterationValue"></span><span>&nbsp;-&nbsp;Step:&nbsp;</span><span id="subIterationValue"></span>
+        </div>
+      <div class="hardwareDiagram">
+        <div id="divisorValueContainer"><input type="text"  id="divisorValue" value="0000 0000" readonly></div>
+        <div id="quotientValueContainer"><input type="text" id="quotientValue" value="0000" readonly></div>
+        <div id="remainderValueContainer"><input type="text" id="remainderValue" value="0000 0000" readonly></div>
+      </div>
+      <div style="display: flex;margin: 45px;">
+        <button style="display: none;" id="previousBtn">Previous</button>
+        <button style="display: none;" id="nextBtn">Next</button>
+      </div>
+      <div id="resultDiv" style="display:none;font-size: 1.5rem;font-weight: bold;margin:40px">
+          <span>Quotient =&nbsp;</span><span id="quotientResult"></span><span>,&nbsp;Remainder =&nbsp;</span><span id="remainderResult"></span>
+      </div>
+    </div>
+      <div class="divisonAlgorithm">
+        <div class="colorClass" id="startValue"></div>
+        <div class="colorClass" id="step1Highlight"></div>
+        <div class="colorClass" id="step2aHighlight"></div>
+        <div class="colorClass" id="step2bHighlight"></div>
+        <div class="colorClass" id="step3Highlight"></div>
+        <div class="colorClass" id="doneHighlight"></div>
+        <div id="repetitionDiv">5th repetition?</div>
+        <div id="noOfRepetition">No: &lt; 5 repetitions</div>
+        <div id="noOfRepetition2">Yes: 5 repetitions</div>
+      </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
