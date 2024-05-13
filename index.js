@@ -411,9 +411,9 @@ previousBtn.addEventListener('click',()=>{
         colorClass[0].style.background = "#47b04a8f";
 
     }
-    else{
-        console.log("error inside prev btn")
-    }
+    // else{
+    //     console.log("error inside prev btn")
+    // }
 
 })
 
